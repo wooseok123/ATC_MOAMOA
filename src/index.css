@@ -8,11 +8,25 @@
   font-style: normal;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1,
 h2,
 h3,
 p {
   margin: 0px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html,
@@ -23,17 +37,18 @@ body,
   margin: 0;
 }
 
-body {
+body * {
   box-sizing: border-box;
   font-family: "NeoDunggeunmo";
   -ms-overflow-style: none;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
 }
 
 .App {
+  min-width: 428px;
   max-width: 428px;
   margin: 0 auto;
   width: 100%;
@@ -69,18 +84,26 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 }
 
 .character {
   opacity: 0%;
   position: relative;
-  display: flex;
   margin-top: 40px;
+}
+
+.building {
+  opacity: 0%;
 }
 
 .showLeft {
   animation: showLeftToRight 0.5s forwards;
+  animation-timing-function: linear;
+}
+
+.showLeftTilt {
+  animation: showLeftToRightTilt 0.5s forwards;
   animation-timing-function: linear;
 }
 
@@ -89,14 +112,51 @@ body {
   animation-timing-function: linear;
 }
 
+.showRightTilt {
+  animation: showRightToLeftTilt 0.5s forwards;
+  animation-timing-function: linear;
+}
+
 .showUp {
   animation: showDownToUp 0.5s forwards;
+  animation-timing-function: linear;
+}
+
+.fadeIn {
+  animation: fadeInandOut 0.5s forwards;
   animation-timing-function: linear;
 }
 
 .sub_characters {
   opacity: 0%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 90px;
+}
+
+.character__sub {
+  padding-bottom: 50px;
+}
+.sub_characters .sub_chars {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffcdcd;
+  height: 320px;
+  border-radius: 22px 22px 0px 0px;
+  font-family: "Black Han Sans";
+  font-size: 40px;
+}
+
+.sub_characters .sub_chars img {
+  flex-grow: 1;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.scrollCartoon::-webkit-scrollbar {
+  display: none;
 }
 
 @keyframes showLeftToRight {
@@ -110,6 +170,26 @@ body {
   }
 }
 
+@keyframes showLeftToRightTilt {
+  0% {
+    opacity: 0%;
+    transform: translateX(-300px) translateY(50px) rotate(-8deg);
+  }
+  100% {
+    opacity: 100%;
+    transform: rotate(-8deg);
+  }
+}
+
+@keyframes fadeInandOut {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 @keyframes showRightToLeft {
   0% {
     opacity: 0%;
@@ -118,6 +198,17 @@ body {
   100% {
     opacity: 100%;
     transform: none;
+  }
+}
+
+@keyframes showRightToLeftTilt {
+  0% {
+    opacity: 0%;
+    transform: translateX(300px) translateY(20px) rotate(8deg);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(20px) rotate(8deg);
   }
 }
 

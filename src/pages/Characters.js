@@ -1,100 +1,183 @@
-import React, { useEffect, useRef } from "react";
-import BlackBoots from "../imgs/BlackBoots.png";
-import Drdr from "../imgs/Dr.dr.png";
-import Meow from "../imgs/Meow.png";
-import Azae from "../imgs/Azae.png";
-import cryingKid from "../imgs/Crying_kid.png";
-import Gurumi from "../imgs/Gurumi.png";
+import React, { useEffect, useRef, useState } from "react";
+import BlackBoots from "../imgs/BlackBoots.svg";
+import Drdr from "../imgs/Dr.dr.svg";
+import Meow from "../imgs/Meow.svg";
+import Azae from "../imgs/Azae.svg";
+import cryingKid from "../imgs/Crying_kid.svg";
+import Gurumi from "../imgs/Gurumi.svg";
 import blackDesc from "../imgs/blackboots_desc.png";
 import DrdrDesc from "../imgs/Drdr_desc.png";
+import { SectionMainTitle, CharacterContainer } from "../styledComponents";
+import { slideUp } from "../utils/slide";
+import CharSubLogo from "../imgs/Char_Subs.png";
 
 const Characters = () => {
   const slideEffects = useRef([]);
 
   useEffect(() => {
-    window.addEventListener("scroll", slideUp);
+    window.addEventListener("scroll", () => {
+      slideUp(slideEffects);
+    });
     return () => {
-      window.removeEventListener("scroll", slideUp);
+      window.removeEventListener("scroll", () => {
+        slideUp(slideEffects);
+      });
     };
   }, []);
-
-  const slideUp = () => {
-    slideEffects.current.forEach((el) => {
-      const currentEl = el.getBoundingClientRect();
-      if (currentEl.top < 700) {
-        if (el.classList[1]) return;
-
-        if (el.id == "blackboots") {
-          el.classList.add("showLeft");
-        } else if (el.id == "Drdr") {
-          el.classList.add("showRight");
-        } else if (el.id == "subs") {
-          el.classList.add("showUp");
-        }
-      }
-    });
-  };
+  console.log(slideEffects);
 
   return (
-    <div>
-      <h2 style={{ fontSize: "64px", marginBottom: "40px" }}>Characters</h2>
+    <CharacterContainer>
+      <SectionMainTitle ref={(el) => (slideEffects.current[5] = el)} id="title">
+        Characters
+      </SectionMainTitle>
       <div className="character__main">
-        <div
-          ref={(el) => (slideEffects.current[0] = el)}
-          id="blackboots"
-          className="character"
-        >
-          <img src={BlackBoots}></img>
-          <div>
-            <img src={blackDesc}></img>
+        <div>
+          <div style={{ width: "100%", display: "flex", position: "relative" }}>
+            <img
+              id="left"
+              className="character"
+              style={{ width: "50%" }}
+              src={BlackBoots}
+              ref={(el) => (slideEffects.current[0] = el)}
+            ></img>
+            <div
+              id="right"
+              className="character"
+              ref={(el) => (slideEffects.current[1] = el)}
+              style={{ width: "50%" }}
+            >
+              <img style={{ width: "100%" }} src={blackDesc}></img>
+              <p
+                style={{
+                  position: "absolute",
+                  bottom: "0px",
+                  right: "0px",
+                  transform: "rotate(-15deg)",
+                  fontSize: "30px",
+                }}
+              >
+                Our Main Character!
+              </p>
+            </div>
           </div>
-          <p
-            style={{
-              position: "absolute",
-              bottom: "20px",
-              right: "0px",
-              transform: "rotate(-15deg)",
-              fontSize: "30px",
-            }}
-          >
-            Our Main Character!
-          </p>
-        </div>
-        <div
-          className="character"
-          id="Drdr"
-          ref={(el) => (slideEffects.current[1] = el)}
-        >
-          <div>
-            <img src={DrdrDesc}></img>
+          <div style={{ width: "100%", display: "flex", position: "relative" }}>
+            <div
+              id="left"
+              ref={(el) => (slideEffects.current[2] = el)}
+              className="character"
+              style={{ width: "50%" }}
+            >
+              <img style={{ width: "100%" }} src={DrdrDesc}></img>
+              <p
+                style={{
+                  position: "absolute",
+                  bottom: "20px",
+                  left: "0px",
+                  transform: "rotate(20deg)",
+                  fontSize: "30px",
+                  width: "100%",
+                }}
+              >
+                Our Genius Inventor!
+              </p>
+            </div>
+            <img
+              ref={(el) => (slideEffects.current[3] = el)}
+              id="right"
+              className="character"
+              style={{ width: "50%" }}
+              src={Drdr}
+            ></img>
           </div>
-          <img src={Drdr}></img>
-          <p
-            style={{
-              position: "absolute",
-              bottom: "20px",
-              left: "0px",
-              transform: "rotate(20deg)",
-              fontSize: "30px",
-            }}
-          >
-            Our Genius Inventor!
-          </p>
         </div>
       </div>
       <div className="character__sub">
         <div
           id="subs"
           className="sub_characters"
-          ref={(el) => (slideEffects.current[2] = el)}
+          ref={(el) => (slideEffects.current[4] = el)}
         >
-          <img src={Azae} id="Azae"></img>
-          <img src={Meow} id="Meow"></img>
-          <img src={Gurumi} id="Gurumi"></img>
-          <img src={cryingKid} id="cryingKid"></img>
+          <div style={{ width: "100%" }}>
+            <img src={CharSubLogo} style={{ width: "401px" }}></img>
+          </div>
+
+          <div className="sub_chars">
+            <img src={Azae} id="Azae"></img>
+            <div
+              style={{
+                backgroundColor: "#FF5B5B",
+                width: "100%",
+                height: "40px",
+                color: "white",
+              }}
+            >
+              AZAE
+            </div>
+          </div>
+          <div
+            className="sub_chars"
+            style={{ backgroundColor: "#FFF1A8", height: "320px" }}
+          >
+            <img src={Meow} id="Meow"></img>
+            <div
+              style={{
+                backgroundColor: "#FF8731",
+                width: "100%",
+                height: "40px",
+                color: "white",
+              }}
+            >
+              MEOW
+            </div>
+          </div>
+          <div
+            className="sub_chars"
+            style={{
+              backgroundColor: "#B2EECA",
+              height: "320px",
+              marginTop: "22px",
+            }}
+          >
+            <img src={Gurumi} id="Gurumi"></img>
+            <div
+              style={{
+                backgroundColor: "#3FBE81",
+                width: "100%",
+                height: "40px",
+                color: "white",
+              }}
+            >
+              GURUMI
+            </div>
+          </div>
+          <div
+            className="sub_chars"
+            style={{
+              backgroundColor: "#A1E3FF",
+              height: "320px",
+              marginTop: "22px",
+            }}
+          >
+            <img src={cryingKid} id="cryingKid"></img>
+            <div
+              style={{
+                backgroundColor: "#2694D2",
+                width: "100%",
+                height: "40px",
+                color: "white",
+                fontSize: "28px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              CRYING KID
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </CharacterContainer>
   );
 };
 
