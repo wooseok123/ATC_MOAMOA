@@ -51,8 +51,8 @@ const Characters = () => {
               <p
                 style={{
                   position: "absolute",
-                  bottom: "0px",
-                  right: "0px",
+                  bottom: "3px",
+                  right: "-28px",
                   transform: "rotate(-15deg)",
                   fontSize: "30px",
                 }}
@@ -72,8 +72,8 @@ const Characters = () => {
               <p
                 style={{
                   position: "absolute",
-                  bottom: "20px",
-                  left: "0px",
+                  bottom: "5px",
+                  left: "-20px",
                   transform: "rotate(20deg)",
                   fontSize: "30px",
                   width: "100%",
@@ -99,7 +99,7 @@ const Characters = () => {
           ref={(el) => (slideEffects.current[4] = el)}
         >
           <div style={{ width: "100%" }}>
-            <img src={CharSubLogo} style={{ width: "401px" }}></img>
+            <img src={CharSubLogo} style={{ width: "100%" }}></img>
           </div>
 
           <div className="sub_chars">

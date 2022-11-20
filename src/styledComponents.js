@@ -95,7 +95,7 @@ export const SectionMainTitle = styled.h2`
   padding: 5px;
   text-align: start;
   font-weight: 400;
-  font-size: 58px;
+  font-size: 54px;
   margin-bottom: 14px;
   color: ${(prop) => (prop.color == "white" ? "white" : "black")};
 `;

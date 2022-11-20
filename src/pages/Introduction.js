@@ -57,38 +57,40 @@ const Introduction = ({ props }) => {
       ></div>
       <div
         style={{
-          width: "110%",
+          width: "105%",
           height: "28px",
           backgroundColor: "#FFDC23",
           transform: "rotate(-8deg)",
           fontSize: "37px",
           letterSpacing: "-4px",
-          wordSpacing: "13px",
+          wordSpacing: "0px",
           lineHeight: "35px",
-          textAlign: "center",
+          textAlign: "start",
           wordBreak: "break-all",
           display: "block",
-          fontFamily: "Black Han Sans",
+
           opacity: "0%",
         }}
         id="leftTilt"
         ref={(el) => (slideItems.current[2] = el)}
       >
-        포스트 플랜트 시대란 무엇인가?
+        <p style={{ marginLeft: "7px", fontFamily: "Black Han Sans" }}>
+          포스트 플랜트 시대란 무엇인가?
+        </p>
       </div>
       <div
         id="fadeIn"
         ref={(el) => (slideItems.current[3] = el)}
         style={{
           margin: "50px 0px 30px 0px",
-          width: "400px",
+          width: "360px",
           fontfamily: "font-family: 'Jua'",
           color: "white",
           fontSize: "24px",
           border: "2px solid white",
           borderRadius: "10px",
           padding: "15px",
-          height: "420px",
+          height: "450px",
           wordBreak: "break-all",
           opacity: "0%",
         }}

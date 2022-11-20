@@ -60,17 +60,17 @@ const Items = () => {
         <div
           style={{
             position: "absolute",
-            bottom: "-75px",
-            left: "25px",
+            bottom: "-65px",
+            left: "9px",
             display: "flex",
-            width: "380px",
+            width: "360px",
             justifyContent: "space-between",
           }}
         >
           <div
             style={{
-              width: "75px",
-              height: "83px",
+              width: "70px",
+              height: "70px",
               backgroundColor: "white",
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
               borderRadius: "5px",
@@ -86,8 +86,8 @@ const Items = () => {
           </div>
           <div
             style={{
-              width: "83px",
-              height: "83px",
+              width: "70px",
+              height: "70px",
               backgroundColor: "white",
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
               borderRadius: "5px",
@@ -103,8 +103,8 @@ const Items = () => {
           </div>
           <div
             style={{
-              width: "83px",
-              height: "83px",
+              width: "70px",
+              height: "70px",
               backgroundColor: "white",
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
               borderRadius: "5px",
@@ -120,8 +120,8 @@ const Items = () => {
           </div>
           <div
             style={{
-              width: "83px",
-              height: "83px",
+              width: "70px",
+              height: "70px",
               backgroundColor: "white",
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
               borderRadius: "5px",
@@ -205,17 +205,17 @@ const Items = () => {
         <div
           style={{
             position: "absolute",
-            bottom: "-75px",
-            left: "25px",
+            bottom: "-65px",
+            left: "8px",
             display: "flex",
-            width: "380px",
+            width: "360px",
             justifyContent: "space-between",
           }}
         >
           <div
             style={{
-              width: "75px",
-              height: "83px",
+              width: "70px",
+              height: "70px",
               backgroundColor: "white",
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
               borderRadius: "5px",
@@ -228,8 +228,8 @@ const Items = () => {
           </div>
           <div
             style={{
-              width: "83px",
-              height: "83px",
+              width: "70px",
+              height: "70px",
               backgroundColor: "white",
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
               borderRadius: "5px",
@@ -242,8 +242,8 @@ const Items = () => {
           </div>
           <div
             style={{
-              width: "83px",
-              height: "83px",
+              width: "70px",
+              height: "70px",
               backgroundColor: "white",
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
               borderRadius: "5px",
@@ -256,8 +256,8 @@ const Items = () => {
           </div>
           <div
             style={{
-              width: "83px",
-              height: "83px",
+              width: "70px",
+              height: "70px",
               backgroundColor: "white",
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
               borderRadius: "5px",

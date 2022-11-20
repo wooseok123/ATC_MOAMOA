@@ -39,7 +39,7 @@ const Citys = () => {
       >
         Welcome To Our Citys
       </SectionMainTitle>
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", width: "100%" }}>
         <div style={{ zIndex: 1 }}>
           <img src={CityRoad}></img>
         </div>
