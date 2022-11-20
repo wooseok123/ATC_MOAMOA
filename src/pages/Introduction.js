@@ -65,7 +65,7 @@ const Introduction = ({ props }) => {
           letterSpacing: "-4px",
           wordSpacing: "0px",
           lineHeight: "35px",
-          textAlign: "start",
+          textAlign: "center",
           wordBreak: "break-all",
           display: "block",
 
@@ -74,7 +74,7 @@ const Introduction = ({ props }) => {
         id="leftTilt"
         ref={(el) => (slideItems.current[2] = el)}
       >
-        <p style={{ marginLeft: "7px", fontFamily: "Black Han Sans" }}>
+        <p style={{ fontFamily: "Black Han Sans" }}>
           포스트 플랜트 시대란 무엇인가?
         </p>
       </div>

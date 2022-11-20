@@ -95,8 +95,17 @@ const Cartoon = () => {
             }}
             className="scrollCartoon"
           >
-            <div style={{ display: "flex", justifyContent: "center" }}>
-              <img src={require(`../imgs/Cartoon/manhwa${modalIdx}.svg`)}></img>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ width: "100%" }}
+                src={require(`../imgs/Cartoon/manhwa${modalIdx}.svg`)}
+              ></img>
             </div>
           </div>
         </div>
