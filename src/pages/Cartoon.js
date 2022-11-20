@@ -61,7 +61,7 @@ const Cartoon = () => {
             zIndex: 100,
             position: "fixed",
             top: "0px",
-            width: "420px",
+            width: "380px",
             height: "100vh",
             backgroundColor: "rgba(0,0,0,0.5)",
           }}

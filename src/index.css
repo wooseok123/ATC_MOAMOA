@@ -48,8 +48,8 @@ body::-webkit-scrollbar {
 }
 
 .App {
-  min-width: 420px;
-  max-width: 420px;
+  min-width: 380px;
+  max-width: 400px;
   margin: 0 auto;
   width: 100%;
   height: 100%;
