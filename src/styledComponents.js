@@ -111,10 +111,16 @@ export const IntroductionContainer = styled.div`
   align-items: center;
 `;
 
-export const IntroductionEartch = styled.img`
-  width: 170px;
-  height: 170px;
+export const IntroductionEarth = styled.img`
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
 `;
 
-export const ItemDescTitle = styled.div``;
+export const BlackBg = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 4;
+`;

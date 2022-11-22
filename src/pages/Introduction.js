@@ -2,9 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import {
   SectionMainTitle,
   IntroductionContainer,
-  IntroductionEartch,
+  IntroductionEarth,
 } from "../styledComponents";
-import Drdr from "../imgs/Dr.dr.svg";
+import introEarth from "../imgs/intro_earth.svg";
 import { slideUp } from "../utils/slide";
 import { TypeAnimation } from "react-type-animation";
 
@@ -38,10 +38,11 @@ const Introduction = ({ props }) => {
         color={"white"}
         ref={(el) => (slideItems.current[4] = el)}
         id="title"
+        style={{ fontSize: "51px" }}
       >
         Post-Plant-Era
       </SectionMainTitle>
-      <IntroductionEartch src={Drdr}></IntroductionEartch>
+      <IntroductionEarth src={introEarth}></IntroductionEarth>
 
       <div
         style={{

@@ -71,7 +71,8 @@ const Items = () => {
             style={{
               width: "70px",
               height: "70px",
-              backgroundColor: "white",
+              backgroundColor: `${descIdx == 0 ? "#FFC8C8" : "white"}`,
+              border: `${descIdx == 0 ? "4px solid #FF5B5B" : "none"}`,
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
               borderRadius: "5px",
               display: "flex",
@@ -82,13 +83,14 @@ const Items = () => {
             id={0}
             onClick={changeDesc}
           >
-            <img src={vaccum}></img>
+            <img style={{ width: "90%" }} src={vaccum}></img>
           </div>
           <div
             style={{
               width: "70px",
               height: "70px",
-              backgroundColor: "white",
+              backgroundColor: `${descIdx == 1 ? "#FFC8C8" : "white"}`,
+              border: `${descIdx == 1 ? "4px solid #FF5B5B" : "none"}`,
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
               borderRadius: "5px",
               display: "flex",
@@ -99,13 +101,14 @@ const Items = () => {
             id={1}
             onClick={changeDesc}
           >
-            <img src={jet}></img>
+            <img style={{ width: "90%" }} src={jet}></img>
           </div>
           <div
             style={{
               width: "70px",
               height: "70px",
-              backgroundColor: "white",
+              backgroundColor: `${descIdx == 2 ? "#FFC8C8" : "white"}`,
+              border: `${descIdx == 2 ? "4px solid #FF5B5B" : "none"}`,
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
               borderRadius: "5px",
               display: "flex",
@@ -116,13 +119,14 @@ const Items = () => {
             id={2}
             onClick={changeDesc}
           >
-            <img src={umbrella}></img>
+            <img style={{ width: "90%" }} src={umbrella}></img>
           </div>
           <div
             style={{
               width: "70px",
               height: "70px",
-              backgroundColor: "white",
+              backgroundColor: `${descIdx == 3 ? "#FFC8C8" : "white"}`,
+              border: `${descIdx == 3 ? "4px solid #FF5B5B" : "none"}`,
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
               borderRadius: "5px",
               display: "flex",
@@ -133,7 +137,7 @@ const Items = () => {
             id={3}
             onClick={changeDesc}
           >
-            <img src={firework}></img>
+            <img style={{ width: "90%" }} src={firework}></img>
           </div>
         </div>
       </div>
@@ -224,7 +228,22 @@ const Items = () => {
               alignItems: "center",
             }}
           >
-            <img src={screw}></img>
+            <img style={{ width: "90%" }} src={screw}></img>
+          </div>
+          <div
+            style={{
+              width: "70px",
+              height: "70px",
+              backgroundColor: "white",
+              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+
+              borderRadius: "5px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img style={{ width: "90%" }} src={battery}></img>
           </div>
           <div
             style={{
@@ -238,7 +257,7 @@ const Items = () => {
               alignItems: "center",
             }}
           >
-            <img src={battery}></img>
+            <img style={{ width: "90%" }} src={watering}></img>
           </div>
           <div
             style={{
@@ -252,21 +271,7 @@ const Items = () => {
               alignItems: "center",
             }}
           >
-            <img src={watering}></img>
-          </div>
-          <div
-            style={{
-              width: "70px",
-              height: "70px",
-              backgroundColor: "white",
-              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-              borderRadius: "5px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <img src={software}></img>
+            <img style={{ width: "90%" }} src={software}></img>
           </div>
         </div>
       </div>
