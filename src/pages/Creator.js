@@ -85,7 +85,8 @@ const Creator = () => {
                   width: "200px",
                 }}
               >
-                앙뇽앙뇽
+                <p>많이 플레이해주세요.</p>
+                <p>사랑합니다.</p>
               </div>
               <div
                 style={{
@@ -142,7 +143,7 @@ const Creator = () => {
                 style={{
                   position: "absolute",
                   zIndex: 5,
-                  left: "73gggpx",
+                  left: "73px",
                   top: "-78px",
                   width: "200px",
                 }}
@@ -268,14 +269,15 @@ const Creator = () => {
                 style={{
                   position: "absolute",
                   zIndex: 5,
-                  left: "75px",
-                  top: "-200px",
+                  left: "70px",
+                  top: "-210px",
                   width: "200px",
                   textAlign: "start",
                   padding: "5px",
+                  letterSpacing: "-0.3px",
                 }}
               >
-                솔의 눈 안좋아합니다.
+                와 모아모아 아시는구나! 참고로 겁.나 어렵습니다.
               </div>
               <div
                 style={{

@@ -52,7 +52,7 @@ const Cartoon = () => {
           <img style={{ width: "80%" }} src={Hwa4} alt={4}></img>
         </div>
       </div>
-      <div style={{ marginTop: "100px" }}>
+      <div style={{ marginTop: "100px", paddingBottom: "50px" }}>
         <img style={{ width: "210px" }} src={cartoonFooter}></img>
       </div>
       {modalIdx ? (
