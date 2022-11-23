@@ -104,7 +104,7 @@ const Cartoon = () => {
             >
               <img
                 style={{ width: "100%" }}
-                src={require(`../imgs/Cartoon/manhwa${modalIdx}.svg`)}
+                src={require(`../imgs/Cartoon/manhwa${modalIdx}.JPG`)}
               ></img>
             </div>
           </div>
