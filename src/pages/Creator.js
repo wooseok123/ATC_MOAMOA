@@ -142,12 +142,12 @@ const Creator = () => {
                 style={{
                   position: "absolute",
                   zIndex: 5,
-                  left: "70px",
-                  top: "-80px",
+                  left: "73gggpx",
+                  top: "-78px",
                   width: "200px",
                 }}
               >
-                앙뇽앙뇽
+                이것저것 그렸습니다.
               </div>
               <div
                 style={{
@@ -205,11 +205,13 @@ const Creator = () => {
                   position: "absolute",
                   zIndex: 5,
                   right: "65px",
-                  top: "-140px",
+                  top: "-153px",
                   width: "200px",
                 }}
               >
-                앙뇽앙뇽
+                <p>모아모아</p>
+                <p>&nbsp;픽셀로</p>
+                <p>모아모아</p>
               </div>
               <div
                 style={{
@@ -266,14 +268,14 @@ const Creator = () => {
                 style={{
                   position: "absolute",
                   zIndex: 5,
-                  left: "65px",
-                  top: "-210px",
+                  left: "75px",
+                  top: "-200px",
                   width: "200px",
                   textAlign: "start",
                   padding: "5px",
                 }}
               >
-                당신이 본 큰 소나무도 원래 작은 솔방울에 불과했다....
+                솔의 눈 안좋아합니다.
               </div>
               <div
                 style={{
